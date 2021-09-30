@@ -1,0 +1,24 @@
+@import url("marbust-framework.css");
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/login/banner.jpg);
+}
+//https://coolors.co/271f30-6c5a49-c8ad55-d0fcb3-9bc59d
+
+$color1: #6C5A49;
+$color2: #e55c00;
+$color3: #3c3c3b;
+$color4: #d0fcb3;
+$color5: #9bc59d;
+
+@import 'partials/fonts';
+@import 'partials/media';
+@import 'partials/login';
+@import 'partials/dashboard';

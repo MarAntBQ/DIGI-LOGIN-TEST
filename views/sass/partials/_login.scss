@@ -1,0 +1,153 @@
+.login-ctnr {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    //background: rgba(0, 0, 0, 0.08);
+
+    .login-box {
+        width: 90%;
+        max-width: 750px;
+        border-radius: 10px;
+        box-shadow: 0 3px 7px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #aaaaaa;
+        //min-height: 75vh;
+        transition: 0.3s all;
+
+        .left,
+        .right {
+            width: 50%;
+        }
+
+        .left {
+            background: $color3;
+            border-radius: 10px 0px 0px 0px;
+            padding: 20px 10px;
+
+            @media (max-width: $break-medium) {
+
+                padding: 10px 10px;
+                width: 40%;
+            }
+
+            @media (max-width: $break-small) {
+                border-radius: 10px 10px 0px 0px;
+                width: 100%;
+            }
+
+            img {
+                pointer-events: none;
+
+                @media (max-width: $break-medium) {
+                    width: 80%;
+                }
+
+                @media (max-width: $break-small) {
+                    width: 25%;
+                }
+            }
+        }
+
+        .right {
+            background: #efefef;
+            padding: 20px 20px;
+            border-radius: 0px 10px 0px 0px;
+
+            @media (max-width: $break-medium) {
+                
+                width: 60%;
+            }
+            @media (max-width: $break-small) {
+                border-radius: 0px 0px 0px 0px;
+                width: 100%;
+            }
+
+
+            h1 {
+                color: $color1;
+            }
+
+            .login-msg {
+                background: $color2;
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            form {
+                margin-top: 10px;
+                width: 100%;
+
+                .input-row {
+                    display: flex;
+                    margin: 10px 5px;
+
+                    span {
+                        width: 40px;
+                        height: 40px;
+                        background: $color2;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                        border-radius: 5px 0px 0px 5px;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 10px;
+                        height: 40px;
+                        border: 1px solid $color2;
+                        border-radius: 0px 5px 5px 0px;
+                        font-family: 'Noto Sans JP', sans-serif;
+                         font-weight: bold;
+                    }
+                }
+
+                .btn-center {
+                    display: block;
+                    margin: 20px auto;
+                    padding: 15px;
+                    width: 200px;
+                    cursor: pointer;
+                    background: $color3;
+                    color: white;
+                    font-weight: bold;
+                    border: 3px solid $color3;
+                    transition: 0.3s;
+                    border-radius: 5px;
+                    font-family: 'Noto Sans JP', sans-serif;
+
+                    &:hover {
+                        background: white;
+                        color: black;
+                    }
+                }
+            }
+            .more-options {
+                width: 100%;
+                a {
+                    text-align: center;
+                    text-decoration: none;
+                    color: $color3;
+                    transition: 0.3s;
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .copy {
+            //margin-top: auto;
+            background: $color2;
+            color: white;
+            width: 100%;
+            border-radius: 0px 0px 10px 10px;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+}
